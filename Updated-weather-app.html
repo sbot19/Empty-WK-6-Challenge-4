@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS-Javascript/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="central-section">
+        <form class="search-bar">
+          <input
+            type="text"
+            id="city-input"
+            placeholder="Search for a city ..."
+            autocomplete="off"
+            autofocus
+          />
+          <input type="submit" value="Search" class="search-button" />
+          <button class="current-button">Current Location</button>
+        </form>
+        <br />
+        <div class="row">
+          <div class="col-5 large-weather-icon">☀️</div>
+          <div class="col-7">
+            <h4 class="from-right-1" id="city"></h4>
+            <h6 id="date-and-time">Current date and time</h6>
+            <h6 id="description"></h6>
+            <div class="row">
+              <div class="col">
+                <span class="large-temp"></span>
+                <span class="units"></span> <a href="#" id="fahrenheit-link"
+                  >°F</a> | <a href="#" id="celsius-link">°C</a></span
+                >
+              </div>
+              <div class="col-7 medium-temp">79°F &nbsp; | &nbsp; 67°F</div>
+            </div>
+            <div class="row weather-info">
+              <div class="col">
+                Humidity <br /><span id="humidity"></span>%
+                
+              </div>
+              <div class="col">
+                Precipitation <br /> <span id="precipitation"></span>%
+                
+              </div>
+              <div class="col">
+                Wind <br /><span id="wind"></span>MPH
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="text-center">
+              <h5><strong>SUN</strong></h5>
+              <h6>Sep 5</h6>
+              <p class="weather-icon">☁️</p>
+              <h6><strong>70°F</strong></h6>
+              <p><small>57°F</small></p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="text-center">
+              <h5><strong>MON</strong></h5>
+              <h6>Sep 6</h6>
+              <p class="weather-icon">☀️</p>
+              <h6><strong>88°F</strong></h6>
+              <p><small>75°F</small></p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="text-center">
+              <h5><strong>TUES</strong></h5>
+              <h6>Sep 7</h6>
+              <p class="weather-icon">🌧</p>
+              <h6><strong>83°F</strong></h6>
+              <p><small>70°F</small></p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="text-center">
+              <h5><strong>WED</strong></h5>
+              <h6>Sep 8</h6>
+              <p class="weather-icon">⛅️</p>
+              <h6><strong>75°F</strong></h6>
+              <p><small>65°F</small></p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="text-center">
+              <h5><strong>THURS</strong></h5>
+              <h6>Sep 9</h6>
+              <p class="weather-icon">🌩</p>
+              <h6><strong>90°F</strong></h6>
+              <p><small>77°F</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="CSS-Javascript/javascript.js">
+      //The source is updated according to the week, in this case it's week 4
+    </script>
+  </body>
+</html>
